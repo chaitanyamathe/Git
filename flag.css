@@ -1,0 +1,18 @@
+.orange{
+    background-color: orange;
+    height: 300px;
+}
+.green{
+    background-color: green;
+    height: 300px;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background-color: blueviolet;
+   
+    
+
+}

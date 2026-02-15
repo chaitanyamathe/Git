@@ -1,0 +1,68 @@
+/* ------------- Pseudo Elements ------------- */
+#pp::selection{ /*used to when we select in any text it convert into blue background and color is in white*/
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 255);
+ 
+ 
+}
+/*The term cascading means inherit the text styles only text properties will inherit recent style get more piroirty*/
+#pp::first-letter{
+  font-weight: 600;
+  font-size: xx-large;
+  font-family: 'Courier New', Courier, monospace;
+}
+#pp{
+   font-family: 'poppins','inter',sans-serif;
+   line-height: 25px;
+}
+/*------------- We have frist-line--------------*/
+
+
+#anchor{
+  text-decoration: none;
+   border-radius: 12px;
+}
+
+.btn{
+  background-color: #339af0;
+  color: rgb(255, 255, 255); /* text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: x-small;
+}
+/*---------- Text adding using pesudo elements ----------
+h1::after{
+  text-align: center;
+  content: "hello";
+  color: rgb(255, 255, 255);
+}
+h1::before{
+  content: "Before the text";
+  color: white;
+}*/
+h1{
+  text-transform: uppercase;
+  text-decoration: underline solid black;
+}
+body{
+  background-color:#96f2d7;
+  color: #0080ff;
+}
+.border {
+  border: 2px; /* fixed */
+  border-style: double;
+  border-color: #000000;
+  color: darkblue;
+  padding-left: 250px;
+  border-bottom-left-radius: 10px;
+}
+
+.border-primary {
+  border: 2px solid black; /* fixed */
+  border-radius: 5px;
+  padding: 20px;
+}
+.spacing{
+  padding-bottom: 20px;
+}

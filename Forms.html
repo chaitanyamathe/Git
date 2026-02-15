@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="margin.css">
+        <title>Form About your details</title>
+    </head>
+    <body class="border" style="background-color: rgb(255, 255, 255);">
+       
+        
+        <form class="margin-class" action="DataBaseNotAvilable">
+            
+            <h1><u>Student Info</u></h1>
+            <label for="name">Your Name : </label>
+            <br>
+            <input id="name" name="name" type="text" required>
+            <br>
+            <br>
+            <label for="Roll">Your RollNo: </label>
+            <br>
+            <input id="Roll" name="RollNo" type="text" placeholder="24BQ1A12XX">
+             <br>
+            <br>
+            <label for="number">Your MobileNo: </label>
+            <br>
+            <input id="number" name="mobilenumber" type="tel" placeholder="+91 " maxlength="10">
+            <h4>Select your branch</h4>
+            <input type="radio" name="branch">
+            <label>INF-A</label>
+            <br>
+            <input type="radio" name="branch">
+            <label>INF-B</label>
+            <br>
+            <input type="radio" name="branch">
+            <label>INF-C</label>
+            <br>
+        <br>
+            <label for="email">Email : </label>
+            <br>
+            <br>
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <br>
+            <p><u>Based on your CGPA if it is</u><ol><li> >9 ----| select TOP</li><li> <4 select BAVG</li></ol></p>
+            <select name="cgpa">
+                <option value="AVG">AVG</option>
+                <option value="TOP" selected>TOP</option>
+                <option value="BAVG">BAVG</option>
+            </select>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label>CHECKBOX IMPLEMENTATION</label>
+            <br>
+            <br>
+            <h3><b>Give the feedback about faculty</b></h3>
+            <textarea name="faculty-feedback" placeholder="Start from here........" rows="10" cols="40" maxlength="10" minlength="4" required></textarea>
+            <br>
+            <br>
+            <h4>Upload your B-Tech Certificates : </h4>
+            <input type="file">
+            <br>
+            <br>
+            <label for="Search">Search Box : </label>
+            <br>
+            <input id="Search" list="bowser">
+            <datalist id="bowser">
+                <option value="Google"></option> 
+                <option value="FireFox"></option>
+                <option value="Edge"></option>
+                <option value="Brave"></option>
+                <option value="Chrome"></option>
+            </datalist>
+            <br>
+                <br>
+                <div class="spacing"><button border-radius="5px" class="btn" type="reset">RESET</button>
+            <button class="btn" type="submit"  >SUBMIT</button></div>
+             
+
+        
+
+
+
+        </form>
+    </body>
+</html>

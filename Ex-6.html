@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Novell Services form</title>
+    </head>
+    <body>
+        
+        <form>
+        <label for="username">Username:</label>
+        <br>
+        <input id="username" type="text">
+        <br>
+         <label for="Password">Password:</label>
+         <br>
+        <input id="Password" type="password">
+        <br>
+
+         <label for="city">City of Employment:</label>
+         <br>
+        <input id="city" type="text">
+        <br>
+         <label for="n">Web server:    </label>
+         <br>
+         <br>
+        <select id="n">
+            <option value="" selected>---Choose a server--</option>
+            <option value="Goggle">Goggle</option>
+            <option value="AWS">AWS</option>
+            <option value="Azure">Azure</option>
+        </select>
+        <br>
+        
+        <h4>Please specify your role: </h4>
+            <input type="radio" name="role">
+            <label>Admin</label>
+            <br>
+            <input type="radio" name="role">
+            <label>Engineer</label>
+            <br>
+            <input type="radio" name="role">
+            <label>Manager</label>
+            <br>
+            <input type="radio" name="role">
+            <label>Guest</label>
+            <br>
+            <h4>Single Sign-on to the following: </h4>
+            <input type="checkbox">
+            <label>Mail</label>
+            <br>
+            <input type="checkbox">
+            <label>Payroll</label>
+            <br>
+            <input type="checkbox">
+            <label>Self-service</label>
+            <br>
+            <br>
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>

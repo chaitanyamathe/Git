@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas and SVG Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content : center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+        canvas, svg {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Canvas and SVG Demo</h1>
+    
+    <p>This webpage demonstrates the use of canvas for dynamic graphics</p>
+
+    <div class="container">
+        <!-- Canvas Section -->
+        <div>
+            <h2>Canvas Drawing</h2>
+            <canvas id="myCanvas" width="300" height="200"></canvas>
+        </div>
+
+        
+    </div>
+<script>
+        // Get Canvas Context
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Draw a blue rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 50);
+
+        // Draw a red circle
+        ctx.beginPath();
+        ctx.arc(200, 100, 40, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+
+        // Draw a green line
+        ctx.beginPath();
+        ctx.moveTo(50, 150);
+        ctx.lineTo(250, 150);
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+    </script>
+    
+
+</body>
+</html>
